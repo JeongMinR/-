@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청년 정책</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 30px;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+        .highlight {
+            background-color: rgb(234, 69, 171);
+        }
+        .link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .search-box {
+            margin-top: 20px;
+        }
+        .search-box input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search-box button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .divider {
+            border-top: 1px dashed #ccc;
+            margin: 20px 0;
+        }
+        h2, h3, h4 {
+            font-size: 1.5em;
+            color: #333;
+            font-weight: bold;
+        }
+        .section-title {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="city-label">대구광역시</div>
+    <div class="header-container">
+        <h1>청년 정책</h1>
+    </div>
+    <hr>
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="검색어를 입력하세요">
+        <button onclick="searchHighlight()">검색</button>
+    </div>
+    <h2>주거</h2>
+    <div class="content">
+        <p class="section-title">전세반환보증금 보증료 지원</p>
+        <p>조건: 대구시 거주 무주택 임차인</p>
+        <p>(전세보증금) 3억원 이하</p>
+        <p>(연소득) 청년 5천만원, 청년외 6천만원, 신혼부부 7천5백만원</p>
+        <p>(제외대상) 민간임대주택 임차인</p>
+        <div class="divider"></div>
+    </div>
+    <div class="content">
+        <p class="section-title">원스톱 주거상담서비스 플랫폼 운영(대구安방)</p>
+        <p>대상: 대구 시민</p>
+        <p>내용:</p>
+        <p>- 청년/신혼부부 주거지원 신청․접수</p>
+        <p>- 전세보증금반환보증 보증료 지원사업 신청․접수</p>
+        <p>- 부동산 상담게시판 운영</p>
+        <p>- 주거정책 안내 등</p>
+        <img src="http://www.areyou.co.kr/news/photo/202309/78728_60970_2355.jpg" alt="▲ 대구시 맞춤령 주거 종합 포털 ‘대구安방’ 메인 화면. <출처=‘대구安방’ 캡쳐>" style="max-width:150%;height:auto;">
+        <div class="divider"></div>
+    </div>
+    <h2>교육</h2>
+    <div class="content">
+        <p class="section-title">기술벤처리더 양성 사업</p>
+        <p>대상:</p>
+        <p> >Scale-Up 과정 : 지역 중소·중견·벤처기업 및 공공기관 임직원</p>
+        <p> >Start-Up 과정 : DGIST 정규 학위과정 재학생·휴학생 및 졸업.</p>
+        <p>내용:</p>
+        <p>- 우수 기술벤처 기업 리더 양성을 위한 최신 기술 및 비즈니스 지식 전달</p>
+        <p>- 지속적인 기업 경쟁력 강화 및 산업환경 내 능동적 대처를 위한 단계별 실무 교육 운영</p>
+        <img src="https://mblogthumb-phinf.pstatic.net/MjAxOTEyMDJfMjU0/MDAxNTc1Mjk4NjE2OTQ4.5KINQ2kWLGZv_Tgw3Zhcw6rmqhFWYEF0ZYMme918y1Eg.guaIdQIItTOLeUeyO-mFXQlsmN3-DbYOPlOp-hOL2nYg.PNG.wildnan/%EB%94%94%EC%A7%80%EC%8A%A4%ED%8A%B8%EA%B8%B0%EC%88%A0%EB%B2%A4%EC%B2%98%EB%A6%AC%EB%8D%94%EA%B3%BC%EC%A0%95_%ED%8A%B9%EC%A0%84.png?type=w800" alt="▲관련 사진" style="max-width:15%;height:auto;">
+    </div>
+
+    <div class="content">
+        <p class="section-title">지역과학기술 성과 실용화 지원</p>
+        <p>대상: 공공 연구 전문기관 및 지역 기업의 재직자, 예비 창업자 등</p>
+        <p>내용:</p>
+        <p>- 대경지역 기술-산업 연계형 특화산업분야(친환경 에너지, 스마트 제조분야) 석박사 대학원과정 운영</p>
+        <p>- 과학기술 정책·실용화 전문가·창업가 대상 전문인력 양성 프로그램 개발·운영</p>
+        <div class="divider"></div>
+    </div>
+    <div class="content">
+        <p class="section-title">서구 메이커스페이스 활성화 지원</p>
+        <p>대상:</p>
+        <p> >대구 거주 청소년 및 후기 청소년</p>
+        <p> >취업 준비생 및 지역 주민</p>
+        <p>내용:</p>
+        <p>- (메이커스페이스 공간 운영) 메이커 장비 및 공간 대여, 메이커 체험 등</p>
+        <p>- (지역 메이커 발굴·지원) 메이커 교육을 통한 취·창업자 역량 강화</p>
+        <p>- (메이커 문화확산) 메이커 문화 활성화를 위한 축제 운영</p>
+        <img src="https://kkomjirak.com/data/editor/2404/thumb-8ba51589997b1274cac651ef9f5f0451_1713512443_8441_600x849.jpg" alt="관련사진" style="max-width:15%;height:auto;">
+        <div class="divider"></div>
+    </div>
+    <h2>복지문화</h2>
+    <div class="content">
+        <p class="section-title">지역사회서비스 청년사업단 운영</p>
+        <p>대상:</p>
+        <p> >(서비스 제공) 만19~34세 청년(70% 이상 채용)</p>
+        <p> >(서비스 이용) 만19~34세 청년(소득기준 없음)</p>
+        <p>서비스종류: 청년 신체건강 증진 서비스(‘24년도 공모 선정)</p>
+        <p>서비스내용: 운동프로그램, 식생활개선 프로그램, 체질개선 프로그램</p>
+        <p>서비스가격: 월 24만원(본인부담금 10%) (서비스기간) 3개월(재판정 1회 가능)</p>
+        <img src="https://www.sisamirae.com/data/photos/portnews/202401/20240108123825-5617.jpg" alt="관련 이미지" style="max-width:40%;height:auto;">
+        <div class="divider"></div>
+    </div>
+    <div class="content">
+        <p class="section-title">청년가요제 개최</p>
+        <p>대상: 전국 청년 누구나</p>
+        <p>내용:</p>
+        <p>- 전국에 있는 청년들을 대상으로 잠재력 있고 역량 있는 청년들을 발굴</p>
+        <p>- 사전 예선전을 치른 후 본선전을 개최하여 잠재력 있고 내실있는 경연대회</p>
+        <p>- 청년주간과 연계하여 풍요로운 볼거리 제공</p>
+        <div class="divider"></div>
+    </div>
+    <div class="content">
+        <p class="section-title">동성로 청년버스킹 활성화 사업</p>
+        <p>대상: 만19세~39세 이하 국내·외 청년예술인으로 구성된 팀 / 거리 공연 가능한 전 분야</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlt-50BI4BDqPDLvcs_TiXLSbdHxXKpYbaGw&s" alt="관련 이미지" style="max-width:80%;height:auto;">
+        <div class="divider"></div>
+
+    <h2>참여권리</h2>
+    <div class="content">
+        <p class="section-title">대구청년정책참여회의</p>
+            <p>자격: 청년정책에 관심있는 대구 청년 누구나</p>
+            <p>내용: </p>
+            <p>- 청년정책 심포지엄(상반기) : 청년정책 설명회, 청년인플루언서 특강, 정책제안대회</p>
+            <p>- 청년소통회의(7~9월) : 청년정책 의견 수렴을 위한 소통 간담회 2회 개최</p>
+            <p>- 청년정책 포럼(하반기) : 청년정책토론회, 청년정책 통합 참여회의</p>
+            <img src="data:image/jpeg;base64,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" alt="관련 이미지" style="max-width:40%;height:auto;">
+            <div class="divider"></div>
+        </div>
+        <div class="content">
+            <p class="section-title">청년커뮤니티포털 젊프 운영</p>
+            <p>대상: 청년정책, 청년행사, 청년기업 등 청년을 위한 정보에 관심 있는 누구나</p>
+            <p>내용:</p>
+            <p>- 다양한 청년 행사, 공모·지원 사업, 청년모임 및 공간 정보</p>
+            <p>- 대구청정넷, 청년사회진입지원금, 청년이슈 등 청년정책과 활동에 대한 정보</p>
+            <p>- 진로, 주거, 심리, 부채 등 다양한 주제로 맞춤형 온라인 상담 지원</p>
+            <p>- 대구를 기반으로 활동하는 청년 프리랜서와 구매자 간의 연결을 위한 플랫폼 제공</p>
+            <p>- 청년기업-청년잇기 YES!매칭에 참여한 청년기업에 대한 정보</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFHJBDkiCQMn6rIYNP0wSIGsOpc2Q6Y0a5vQ&s" alt="관련 이미지" style="max-width:40%;height:auto;">
+            <div class="divider"></div>
+        </div>
+        <div class="content">
+            <p class="section-title">4차산업혁명 청년체험단 운영</p>
+            <p>대상: </p>
+            <p> >연령 : 만19~39세</p>
+            <p> 공고일 기준 아래 요건 중 하나를 충족하는 경우 접수 가능</p>
+            <p>  -주민등록 주소지가 대구인 청년</p>
+            <p>  -사업장 주소지가 대구인 창업기업 대표자 및 대구지역 소재 기업의 재직자</p>
+            <p>  -대구지역 소재 대학 학생(재학생, 휴학생, 대학원생 가능)</p>
+            <div class="divider"></div>
+        
+        <div>
+            <p>자세한 내용은 <span class="link" onclick="window.open('https://www.daegu.go.kr/YouthPolicy/index.do')">대구광역시 시청</span>에서 확인하세요.</p>
+        </div>
+    
+        <script>
+            function searchHighlight() {
+                const searchInput = document.getElementById('search-input').value.trim();
+                if (searchInput === '') return;
+    
+                const content = document.querySelector('.content');
+                const regex = new RegExp(`(${searchInput})`, 'gi');
+                content.innerHTML = content.innerHTML.replace(/(<mark class="highlight">|<\/mark>)/gim, '');
+    
+                content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+            }
+        </script>
+    </body>
+     
+    </html>
+        
